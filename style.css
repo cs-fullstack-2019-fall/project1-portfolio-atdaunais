@@ -1,0 +1,78 @@
+html{
+    height: 100%;
+    width: auto;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 3fr 5fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+    "img menu menu ."
+    "img content content content"
+    "label content content content"
+    "label content content content"
+    ". . . .";
+    background-image: linear-gradient(deepskyblue, lightskyblue);
+    background-size: cover;
+}
+
+table{
+    grid-area: menu;
+    background-color: white;
+    opacity: .5;
+    height: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Baloo', cursive;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+aside{
+    grid-area: content;
+    background-color: white;
+    opacity: .7;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 100px 10px 100px;
+    color: black;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+article{
+    grid-area: label;
+    background-color: white;
+    font-family: 'Baloo', cursive;
+    opacity: .7;
+    color: black;
+    padding: 25% 0 0 15%;
+    margin-bottom: 50%;
+    margin-right: 10px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#headshot{
+    grid-area: img;
+    width: 50%;
+    border-radius: 30px;
+    margin: 10px 0 0 30px;
+}
+
+.logo{
+    width: 100px;
+    display: inline;
+}
