@@ -1,0 +1,137 @@
+html{
+    height: 100%;
+    width: auto;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 3fr 5fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+            "img menu menu ."
+            "img content content skills"
+            "label content content skills"
+            "label content content skills"
+            ". content content skills";
+    background-image: linear-gradient(deepskyblue, lightskyblue);
+    background-size: cover;
+}
+
+table{
+    grid-area: menu;
+    background-color: white;
+    opacity: .5;
+    height: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Baloo', cursive;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+aside{
+    grid-area: content;
+    background-color: white;
+    opacity: .9;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 100px 0 100px;
+    color: black;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+aside div{
+    padding: 35px;
+    text-decoration: overline;
+}
+
+section{
+    grid-area: skills;
+    background-color: white;
+    opacity: .9;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+article{
+    grid-area: label;
+    background-color: white;
+    font-family: 'Baloo', cursive;
+    opacity: .7;
+    color: black;
+    padding: 20% 0 0 15%;
+    margin-bottom: 50%;
+    margin-right: 10px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#headshot{
+    grid-area: img;
+    width: 50%;
+    border-radius: 30px;
+    margin: 10px 0 0 30px;
+}
+
+.logo{
+    width: 110px;
+    padding: 5px 10px;
+    border: 2px solid deepskyblue;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.logo:hover{
+    background-color: deepskyblue;
+}
+
+div img{
+    margin: 0 20% 0 33%;
+}
+
+#css_logo, #python_logo, #jquery_logo, #js_logo, #html_logo{
+    display: block;
+    border: 3px solid deepskyblue;
+    border-radius: 30px;
+    width: 80px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+#css_logo:hover, #python_logo:hover, #jquery_logo:hover, #js_logo:hover, #html_logo:hover{
+    background-color: deepskyblue;
+}
+
+#resume{
+    width: 1000px;
+    height: 500px;
+}
+
+#download_res{
+    display: block;
+    margin: 25px 40% 0 40%;
+    padding: 10px 0;
+    border: 3px solid deepskyblue;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+
+div p{
+    display: inline;
+}

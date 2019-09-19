@@ -31,10 +31,6 @@ table{
     text-align: center;
 }
 
-table:hover{
-    height: 60%;
-}
-
 a{
     text-decoration: none;
     color: black;
