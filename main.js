@@ -1,5 +1,101 @@
 let resume_btn = document.getElementById("download_res");
-let accordion = document.getElementsByClassName("accordion");
+let reflect_btns = document.getElementsByClassName("reflect_btn");
+let reflect_content = document.getElementsByClassName("reflect_content");
+
+
+
+// console.log(!(reflect_content[0].getAttribute("hidden") === true));
+// reflect_btns[0].addEventListener("checked",function () {
+//     if (!(reflect_content[0].getAttribute("hidden") === true)){
+//         reflect_content[0].removeAttribute("hidden");
+//     }
+//     else{
+//         reflect_content[0].setAttribute("hidden","")
+//     }
+// });
+
+// if (reflect_btns[0].getAttribute("checked") === ""){
+//     reflect_content[0].removeAttribute("hidden")
+// }
+// else if (reflect_btns[0].getAttribute("checked")===null){
+//     reflect_content[0].setAttribute("hidden","")
+// }
+
+// for (let i = 0; i < reflect_btns.length; i++) {
+//     reflect_btns[i].addEventListener("click", display_text(i));
+// }
+//
+// function display_text(idx) {
+//     if (reflect_content[idx].removeAttribute("hidden")
+// }
+
+
+reflect_btns[0].addEventListener("click", function () {
+   reflect_content[0].removeAttribute("hidden");
+   reflect_content[1].setAttribute("hidden","");
+   reflect_content[2].setAttribute("hidden","");
+   reflect_content[3].setAttribute("hidden","");
+   reflect_content[4].setAttribute("hidden","");
+   reflect_content[5].setAttribute("hidden","");
+
+});
+
+reflect_btns[1].addEventListener("click", function () {
+   reflect_content[1].removeAttribute("hidden");
+   reflect_content[0].setAttribute("hidden","");
+   reflect_content[2].setAttribute("hidden","");
+   reflect_content[3].setAttribute("hidden","");
+   reflect_content[4].setAttribute("hidden","");
+   reflect_content[5].setAttribute("hidden","");
+
+});
+
+reflect_btns[2].addEventListener("click", function () {
+   reflect_content[2].removeAttribute("hidden");
+   reflect_content[1].setAttribute("hidden","");
+   reflect_content[0].setAttribute("hidden","");
+   reflect_content[3].setAttribute("hidden","");
+   reflect_content[4].setAttribute("hidden","");
+   reflect_content[5].setAttribute("hidden","");
+
+});
+
+reflect_btns[3].addEventListener("click", function () {
+   reflect_content[3].removeAttribute("hidden");
+   reflect_content[1].setAttribute("hidden","");
+   reflect_content[2].setAttribute("hidden","");
+   reflect_content[0].setAttribute("hidden","");
+   reflect_content[4].setAttribute("hidden","");
+   reflect_content[5].setAttribute("hidden","");
+
+});
+
+reflect_btns[4].addEventListener("click", function () {
+   reflect_content[4].removeAttribute("hidden");
+   reflect_content[1].setAttribute("hidden","");
+   reflect_content[2].setAttribute("hidden","");
+   reflect_content[3].setAttribute("hidden","");
+   reflect_content[0].setAttribute("hidden","");
+   reflect_content[5].setAttribute("hidden","");
+
+});
+
+reflect_btns[5].addEventListener("click", function () {
+   reflect_content[5].removeAttribute("hidden");
+   reflect_content[1].setAttribute("hidden","");
+   reflect_content[2].setAttribute("hidden","");
+   reflect_content[3].setAttribute("hidden","");
+   reflect_content[4].setAttribute("hidden","");
+   reflect_content[0].setAttribute("hidden","");
+
+});
+
+
+
+
+
+
+// let accordion = document.getElementsByClassName("accordion");
 
 
 // let all_links = document.getElementsByTagName("a");

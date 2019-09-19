@@ -33,11 +33,11 @@ table{
 a{
     text-decoration: none;
     color: black;
+    transition: .5s;
 }
 
 a:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration: black underline;
 }
 
 aside{
@@ -53,7 +53,7 @@ aside{
     font-family: 'Roboto Mono', monospace;
 }
 
-aside div{
+.educ_text{
     padding: 35px;
     text-decoration: overline;
 }
@@ -97,6 +97,7 @@ article{
 
 .logo:hover{
     background-color: deepskyblue;
+    box-shadow: 3px 3px 10px 3px black;
 }
 
 div img{
@@ -115,11 +116,15 @@ div img{
 
 #css_logo:hover, #python_logo:hover, #jquery_logo:hover, #js_logo:hover, #html_logo:hover{
     background-color: deepskyblue;
+    box-shadow: 3px 3px 10px 3px black;
 }
 
 #resume{
-    width: 1000px;
+    margin-top: 15px;
+    width: 930px;
     height: 500px;
+    border: 5px solid deepskyblue;
+    box-shadow: 5px 5px 10px 5px black;
 }
 
 #download_res{
@@ -130,8 +135,46 @@ div img{
     border-radius: 50px;
     background-color: black;
     color: white;
+    transition: .3s;
 }
 
-div p{
+#download_res:hover{
+    box-shadow: 3px 3px 10px 3px black;
+}
+
+.logo_title{
     display: inline;
+}
+
+#week1_text,#week2_text,#week3_text, #week5_text, #week6_text{
+    font-size: 14px;
+    border: 2px solid deepskyblue;
+    padding: 8px;
+}
+
+#week4_text{
+    font-size: 13px;
+    border: 2px solid deepskyblue;
+    padding: 8px;
+}
+
+.reflect_btn{
+    display: none;
+}
+
+.week_label{
+    border: 2px solid deepskyblue;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+#reflect_pdf{
+    padding-right: 20px;
+}
+
+p{
+    font-size: 1vw;
 }

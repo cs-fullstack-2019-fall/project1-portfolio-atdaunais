@@ -36,8 +36,7 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration: black underline;
 }
 
 aside{
@@ -72,18 +71,25 @@ div img{
 #divClick{
     float: left;
     border: 2px solid deepskyblue;
+    transition: .3s;
 }
 
 #divGoogle{
     float: right;
     clear: left;
     border: 2px solid deepskyblue;
+    transition: .3s;
 }
 
 #divShowhide{
     float: left;
     clear: right;
     border: 2px solid deepskyblue;
+    transition: .3s;
+}
+
+#divClick:hover, #divGoogle:hover, #divShowhide:hover{
+    box-shadow: 3px 3px 10px 3px black;
 }
 
 #text_for_click{

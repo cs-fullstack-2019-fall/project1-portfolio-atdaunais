@@ -36,8 +36,7 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration: black underline;
 }
 
 aside{
@@ -78,25 +77,85 @@ article{
     display: inline;
 }
 
-.accordion {
+#week1_text{
+    font-size: 1.2vw;
+}
+
+.reflect_btn{
+    display: none;
+}
+
+.week_label{
+    border: 2px solid deepskyblue;
+    padding: 5px;
     background-color: black;
     color: white;
-    font-family: 'Baloo', cursive;
-    padding: 10px;
-    width: 50%;
-    text-align: left;
-    border: 2px solid deepskyblue;
-    transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: grey;
-    color: black;
+p{
+    font-size: 1vw;
 }
 
-.panel {
-    padding: 0 20px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-}
+/*.tabs{*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*    box-shadow: 0 4px 4px -2px black;*/
+/*}*/
+
+/*.tab{*/
+/*    width: 100%;*/
+/*    color: white;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.tab_label{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 1em;*/
+/*    background-color: midnightblue;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.tab:hover{*/
+/*    background-color: black;*/
+/*}*/
+
+/*.tab:after{*/
+/*    width: 1em;*/
+/*    height: 1em;*/
+/*    text-align: center;*/
+/*    transition: .5s;*/
+/*}*/
+
+/*.tab_content{*/
+/*    max-height: 0;*/
+/*    padding: 0 1em;*/
+/*    color: black;*/
+/*    background-color: midnightblue;*/
+/*    transition: .5s;*/
+/*}*/
+
+
+
+/*.accordion {*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    font-family: 'Baloo', cursive;*/
+/*    padding: 10px;*/
+/*    width: 50%;*/
+/*    text-align: left;*/
+/*    border: 2px solid deepskyblue;*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*.active, .accordion:hover {*/
+/*    background-color: grey;*/
+/*    color: black;*/
+/*}*/
+
+/*.panel {*/
+/*    padding: 0 20px;*/
+/*    background-color: white;*/
+/*    display: none;*/
+/*    overflow: hidden;*/
+/*}*/
