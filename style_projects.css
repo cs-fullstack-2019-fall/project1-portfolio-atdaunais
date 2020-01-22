@@ -33,6 +33,7 @@ table{
 a{
     text-decoration: none;
     color: black;
+    transition: .5s;
 }
 
 a:hover{
