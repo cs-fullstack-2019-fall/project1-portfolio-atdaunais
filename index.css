@@ -1,0 +1,421 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("images/sky_image.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-family: 'Sriracha', cursive;
+        text-decoration: deepskyblue underline;
+    }
+
+    .section {
+        padding-bottom: 5px;
+        padding-top: 30px;
+        background-color: rgba(0,0,0,.5);
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: rgba(255,255,255,.7);
+        position: fixed;
+        top: 0;
+        text-align: center;
+    }
+
+    .menu_link {
+        padding: 5px 25px;
+        min-font-size: 10px;
+        max-font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Sriracha', cursive;
+        transition: .5s;
+    }
+
+    .menu_link:hover {
+        color: deepskyblue;
+        text-decoration: deepskyblue underline;
+    }
+
+    #head {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    #head_text {
+        font-family: 'Sriracha', cursive;
+        font-size: 15px;
+        background-color: rgba(0,0,0,.5);
+        padding: 10px 0;
+        margin: 10% 10%;
+        border: 5px solid deepskyblue;
+        border-radius: 30px;
+    }
+
+    #head_scroll {
+        font-family: 'Sriracha', cursive;
+        margin: 0 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #about {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #about_list, #projects_list {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about_title {
+        font-family: 'Sriracha', cursive;
+        font-size: 20px;
+        margin-top: 120px;
+    }
+
+    .about_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        background-color: rgba(255,255,255,.5);
+        margin: 30px 10px;
+        padding: 15px 15px;
+        border-radius: 30px;
+        color: black;
+    }
+
+    #skills {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    #skills_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .language {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        margin: 25px;
+    }
+
+    #projects {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    .project_title {
+        font-family: 'Sriracha', cursive;
+        text-decoration: white underline;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+        transition: .5s;
+    }
+
+    .project_title:hover {
+        text-decoration: deepskyblue underline;
+    }
+
+    .project_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        border-right: solid 2px white;
+        margin: 20px 5px;
+        text-align: right;
+        padding: 0 15px 0 0;
+    }
+
+    .project_img_container {
+        margin-top: 40px;
+    }
+
+    .project_img {
+        width: 200px;
+    }
+
+    #education {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    #education_list {
+        background-color: rgba(0,0,0,.8);
+        margin: 0 5% 5% 5%;
+        text-align: center;
+        padding: 70px 20px;
+        border-radius: 90px;
+    }
+
+    .school_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        border-top: solid white;
+        padding: 10px 0 40px 0;
+    }
+
+    #contact {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #contact_list {
+        display: grid;
+        /*grid-template-columns: 2fr 1fr;*/
+    }
+
+    #contact_info {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #resume {
+        text-align: center;
+        /*padding-left: 11%;*/
+    }
+
+    #download_link {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-decoration: white underline;
+        text-align: center;
+        padding: 15px 0 30px 0;
+        transition: .5s;
+    }
+
+    #download_link:hover {
+        text-decoration: deepskyblue underline;
+    }
+
+    .misc_link {
+        text-decoration: deepskyblue underline;
+        color: white;
+        transition: .5s;
+    }
+
+    .misc_link:hover {
+        color: deepskyblue;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-family: 'Sriracha', cursive;
+        text-decoration: deepskyblue underline;
+    }
+
+    .section {
+        padding-bottom: 5px;
+        padding-top: 30px;
+        background-color: rgba(0,0,0,.5);
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: rgba(255,255,255,.7);
+        position: fixed;
+        top: 0;
+        padding: 15px;
+        text-align: center;
+        margin: 0 25%;
+    }
+
+    .menu_link {
+        padding: 0 40px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Sriracha', cursive;
+        transition: .5s;
+    }
+
+    .menu_link:hover {
+        color: deepskyblue;
+        text-decoration: deepskyblue underline;
+    }
+
+    #head {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    #head_text {
+        font-family: 'Sriracha', cursive;
+        font-size: 15px;
+        background-color: rgba(0,0,0,.5);
+        padding: 50px;
+        margin: 10% 35%;
+        border: 5px solid deepskyblue;
+        border-radius: 30px;
+    }
+
+    #head_scroll {
+        font-family: 'Sriracha', cursive;
+        margin: 0 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #about {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #about_list, #projects_list {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about_title {
+        font-family: 'Sriracha', cursive;
+        font-size: 30px;
+        margin: 90px;
+    }
+
+    .about_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        background-color: rgba(255,255,255,.5);
+        margin: 60px 20%;
+        padding: 25px 25px;
+        border-radius: 30px;
+        color: black;
+    }
+
+    #skills {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    #skills_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .language {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        margin: 25px;
+    }
+
+    #projects {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    .project_title {
+        font-family: 'Sriracha', cursive;
+        text-decoration: white underline;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+        transition: .5s;
+    }
+
+    .project_title:hover {
+        text-decoration: deepskyblue underline;
+    }
+
+    .project_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        border-right: solid 2px white;
+        margin: 40px 130px 50px 60px;
+        text-align: right;
+        padding: 0 15px 0 0;
+    }
+
+    .project_img_container {
+        margin-top: 25px;
+        padding-right: 20%;
+    }
+
+    .project_img {
+        width: 400px;
+    }
+
+    #education {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    #education_list {
+        background-color: rgba(0,0,0,.8);
+        margin: 0 20% 10% 20%;
+        text-align: center;
+        padding: 70px 200px;
+        border-radius: 90px;
+    }
+
+    .school_description {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        border-top: solid white;
+        padding: 10px 0 40px 0;
+    }
+
+    #contact {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #contact_list {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #contact_info {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    #resume {
+        text-align: left;
+        padding-left: 11%;
+    }
+
+    #resume_iframe {
+        width: 930px;
+        height: 500px;
+    }
+
+    #download_link {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-decoration: white underline;
+        text-align: center;
+        padding: 15px 0 30px 0;
+        transition: .5s;
+    }
+
+    #download_link:hover {
+        text-decoration: deepskyblue underline;
+    }
+
+    .misc_link {
+        text-decoration: deepskyblue underline;
+        color: white;
+        transition: .5s;
+    }
+
+    .misc_link:hover {
+        color: deepskyblue;
+    }
+}

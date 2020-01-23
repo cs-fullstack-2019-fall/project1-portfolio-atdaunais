@@ -2,23 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="style_homepage.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    <title>Andrew Daunais</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Lobster+Two|Sawarabi+Mincho|Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
-<table class="animated slideInDown">
-    <tr>
-        <td><a href="./pg1_about_me.html">About Me</a></td>
-        <td><a href="./pg2_skills_education.html">Skills and Education</a></td>
-        <td><a href="./pg3_projects.html">Projects</a></td>
-        <td><a href="./pg4_resume.html">Resume</a></td>
-        <td><a href="./pg5_contact.html">Contact me</a></td>
-<!--        <td><a href="./pg6_reflections.html">Reflections</a></td>-->
-    </tr>
-</table>
-<section class="animated pulse"><h1>Hi, I'm Andrew</h1><h3>Full Stack Developer</h3></section>
-<script src="main.js"></script>
+    <div id="menu">
+        <a href="#about" class="menu_link">About Me</a>
+        <a href="#skills" class="menu_link">Skills</a>
+        <a href="#projects" class="menu_link">Projects</a>
+        <a href="#education" class="menu_link">Education</a>
+        <a href="#contact" class="menu_link">Contact</a>
+    </div>
+
+    <div id="head" class="section">
+        <div id="head_text">
+            <h2>Hello, I'm Andrew</h2>
+            <h2>Fullstack Developer</h2>
+        </div>
+        <div id="head_scroll" onclick="document.getElementById('about').scrollIntoView();" onmouseover="this.classList.add('animated', 'pulse')" onmouseout="this.classList.remove('animated', 'pulse')">
+            <div>Get to know me</div>
+            <img src="images/down_arrow.png" alt="arrow">
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <h1>About Me</h1>
+        <div id="about_list">
+            <div class="about_title">Passionate</div>
+            <div class="about_description">Whether it's programming, music, or video game design, I love opportunities to fully immerse myself in new concepts and skill sets. My drive as a developer stems from my passion to absorb any information I can get my hands on.</div>
+            <div class="about_description">In August of 2019, I began learning software development skills at CodeCrew Code School. After 6 months of continuously learning new languages and frameworks every 3-4 weeks, I proved to myself and those around me that I have the ability to adapt to any environment I'm thrown into and pick up new knowledge quickly.</div>
+            <div class="about_title">Adaptable</div>
+            <div class="about_title">Multifaceted</div>
+            <div class="about_description">From receiving my bachelor's degree in music performance at Austin Peay State University to graduating from CodeCrew Code School, I'm always looking to expand my repertoire of skills. Versatility is an important characteristic of any person, whether they are working independently or with larger groups. I take pride in my ability to offer a unique perspective to any work environment.</div>
+        </div>
+    </div>
+
+    <div id="skills" class="section">
+        <h1>Languages and Frameworks</h1>
+        <div id="skills_list">
+            <div class="language">
+                <img src="images/icon_logos/icons8-html-5-100.png" alt="HMTL Logo">
+                <div>HTML</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-css3-100.png" alt="CSS Logo">
+                <div>CSS</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-javascript-100.png" alt="JS Logo">
+                <div>JavaScript</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-python-104.png" alt="python Logo">
+                <div>Python</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-c-sharp-logo-100.png" alt="c# Logo">
+                <div>C#</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-react-90.png" alt="react Logo">
+                <div>ReactJS</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-django-100.png" alt="django Logo">
+                <div>Django</div>
+            </div>
+            <div class="language">
+                <img src="images/icon_logos/icons8-redux-100.png" alt="redux Logo">
+                <div>Redux</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <h1>Projects</h1>
+        <div id="projects_list">
+            <div class="project_description">
+                <a href="https://github.com/atdaunais/waking-soundly" target="_blank"><div class="project_title">Waking Soundly</div></a>
+                <div>Waking Soundly is a music-led meditation aid. Using Django, ReactJS, CSS, Redux, and a JavaScript library from
+                    <a href="https://beepbox.co/" target="_blank" class="misc_link">BeepBox</a>, this application procedurally loops through music in different tonal centers selected by the user. Focused on the idea of relaxation through musical ideas of repetition, tension, and release, I created a system that will weave the 144+ tracks of music together in different combinations each time you listen.</div>
+            </div>
+            <div class="project_img_container"><a href="https://github.com/atdaunais/waking-soundly" target="_blank"><img src="images/waking_soundly_homepage.png" alt="ws image" class="project_img"></a></div>
+
+            <div class="project_description">
+                <a href="https://github.com/cs-fullstack-2019-fall/reactdjango-project2-atdaunais" target="_blank"><div class="project_title">Metsava</div></a>
+                <div>Metsava is an MMORPG (Massively Multiplayer Online Role Playing Game) built using Django, ReactJS and CSS. Aesthetically inspired by world mythologies of tree deities, this game allows the player to dive in and create their own story. You can choose to be a mage, warrior, or rogue, then join friends and strangers to fight against the enemies in the game. Or go to the PVP (player versus player) mode and fight with other players online. Adventures await you in Metsava.</div>
+            </div>
+            <div class="project_img_container"><a href="https://github.com/cs-fullstack-2019-fall/reactdjango-project2-atdaunais" target="_blank"><img src="images/Screenshot%20from%202020-01-14%2016-05-00.png" alt="metsava image" class="project_img"></a></div>
+
+            <div class="project_description">
+                <a href="http://app1.andrewdaunais.com/" target="_blank"><div class="project_title">The Gamer's Wiki</div></a>
+                <div>This wiki site is a place to explore video game history and in-game lore. This is a fullstack Django application using the Django templating engine along with CSS. Enjoy searching through content others have posted, or login and create your own content.</div>
+            </div>
+            <div class="project_img_container"><a href="http://app1.andrewdaunais.com/" target="_blank"><img src="images/gamers_wiki_ss.png" alt="gamers wiki image" class="project_img"></a></div>
+        </div>
+    </div>
+
+    <div id="education" class="section">
+        <h1>Education</h1>
+        <div id="education_list">
+            <div><img src="images/logo_codeschool.png" alt="CS Logo"></div>
+            <div class="school_description">
+                <a href="https://www.code-crew.org/codeschool" target="_blank" class="misc_link"><div>CodeCrew Code School</div></a>
+                <div>Software Development Bootcamp ~ 2019-2020</div>
+            </div>
+
+            <div><img src="images/logo_APSU.png" alt="APSU Logo"></div>
+            <div class="school_description">
+                <a href="https://www.apsu.edu/" target="_blank" class="misc_link"><div>Austin Peay State University</div></a>
+                <div>Bachelor of Music - Classical Voice Performance ~ 2014-2018</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h1>Contact</h1>
+        <div id="contact_list">
+            <div id="resume">
+                <iframe src="images/Andrew%20Daunais%20Resume%20(2).pdf" frameborder="0" id="resume_iframe"></iframe>
+                <a href="images/Andrew%20Daunais%20Resume%20(2).pdf" download="andrew_daunais_resume"><div id="download_link">Download my Resume</div></a>
+            </div>
+            <div id="contact_info">
+                <div>Email: atdaunais@gmail.com</div>
+                <div>LinkedIn: <a href="https://www.linkedin.com/in/andrew-daunais/" target="_blank" class="misc_link">Visit my LinkedIn Here</a></div>
+                <div>Github: <a href="https://github.com/atdaunais" target="_blank" class="misc_link">See my work on Github</a></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
