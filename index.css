@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("images/sky_image.JPG");
+    background-image: url("images/smaller_sky_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -237,9 +237,9 @@ body {
         background-color: rgba(255,255,255,.7);
         position: fixed;
         top: 0;
-        padding: 1.5%;
+        padding: 1.2% 0;
         text-align: center;
-        margin: 0 25%;
+        margin: 0 28vw;
     }
 
     .menu_link {
