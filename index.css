@@ -1,420 +1,384 @@
-html {
+/*|||||||||||||||||||||||||||||
+||| MOBILE-PORTRAIT/DEFAULT |||
+|||||||||||||||||||||||||||||*/
+html{
     scroll-behavior: smooth;
 }
 
-body {
-    background-image: url("images/smaller_sky_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
     margin: 0;
+    /* overflow: hidden; */
+    color: #734519;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (max-device-width: 599px) {
-    h1 {
-        font-family: 'Sriracha', cursive;
-        text-decoration: deepskyblue underline;
-    }
-
-    .section {
-        padding-bottom: 2%;
-        padding-top: 10%;
-        background-color: rgba(0,0,0,.5);
-        color: white;
-        text-align: center;
-    }
-
-    img {
-        width: 20vw;
-    }
-
-    #menu {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        background-color: rgba(255,255,255,.7);
-        position: fixed;
-        top: 0;
-        text-align: center;
-    }
-
-    .menu_link {
-        padding: 1vh 1.6vw;
-        font-size: 3.9vw;
-        color: black;
-        text-decoration: none;
-        font-family: 'Sriracha', cursive;
-        transition: .5s;
-    }
-
-    .menu_link:hover {
-        color: deepskyblue;
-        text-decoration: deepskyblue underline;
-    }
-
-    #head {
-        text-align: center;
-        padding-bottom: 5%;
-    }
-
-    #head_text {
-        font-family: 'Sriracha', cursive;
-        font-size: 3vw;
-        background-color: rgba(0,0,0,.5);
-        padding: 2% 0;
-        margin: 10% 10%;
-        border: 5px solid deepskyblue;
-        border-radius: 30px;
-    }
-
-    #head_scroll {
-        font-family: 'Sriracha', cursive;
-        margin: 0 2%;
-        font-size: 4vw;
-        font-weight: bold;
-    }
-
-    #about {
-        background-color: rgba(0,0,0,.8);
-    }
-
-    #about_list{
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about_title {
-        font-family: 'Sriracha', cursive;
-        font-size: 5vw;
-        margin-top: 25vh;
-    }
-
-    .about_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        background-color: rgba(255,255,255,.5);
-        margin: 5vh 2vw;
-        padding: 4%;
-        border-radius: 30px;
-        color: black;
-    }
-
-    #skills {
-        background-color: rgba(0,0,0,.5);
-    }
-
-    #skills_list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .language {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        margin: 10%;
-    }
-
-    #projects {
-        background-color: rgba(0,0,0,.8);
-    }
-
-    .project_title {
-        font-family: 'Sriracha', cursive;
-        text-decoration: white underline;
-        color: white;
-        font-weight: bold;
-        font-size: 5vw;
-        margin-bottom: 1vh;
-        transition: .5s;
-    }
-
-    .project_title:hover {
-        text-decoration: deepskyblue underline;
-    }
-
-    .project_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        border-top: solid 2px white;
-        margin: 1vh 1vw;
-        text-align: left;
-        padding: 0 1vw 0 2vw;
-    }
-
-    .project_img_container {
-        margin-top: 4vh;
-    }
-
-    .project_img {
-        width: 50vw;
-    }
-
-    #education {
-        background-color: rgba(0,0,0,.5);
-    }
-
-    #education_list {
-        background-color: rgba(0,0,0,.8);
-        margin: 0 5% 5% 5%;
-        text-align: center;
-        padding: 10%;
-        border-radius: 90px;
-    }
-
-    .school_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        border-top: solid white;
-        padding: 5% 0 5% 0;
-    }
-
-    #contact {
-        background-color: rgba(0,0,0,.8);
-    }
-
-    #contact_list {
-        display: grid;
-        /*grid-template-columns: 2fr 1fr;*/
-    }
-
-    #contact_info {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        text-align: center;
-        padding-bottom: 5%;
-    }
-
-    #resume {
-        text-align: center;
-        /*padding-left: 11%;*/
-    }
-
-    #download_link {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        color: white;
-        font-size: 5vw;
-        text-decoration: white underline;
-        text-align: center;
-        padding: 5% 0;
-        transition: .5s;
-    }
-
-    #download_link:hover {
-        text-decoration: deepskyblue underline;
-    }
-
-    .misc_link {
-        text-decoration: deepskyblue underline;
-        color: white;
-        transition: .5s;
-    }
-
-    .misc_link:hover {
-        color: deepskyblue;
-    }
+a, a:visited{
+    /* text-decoration: underline; */
+    color: #734519;
+    transition: .3s;
 }
 
+a:hover{
+    color: #f3e5c7;
+}
 
-@media only screen and (min-device-width: 600px) {
-    h1 {
-        font-family: 'Sriracha', cursive;
-        text-decoration: deepskyblue underline;
-    }
+#top-of-page{
+    position: absolute;
+    top: 0;
+}
 
-    .section {
-        padding-bottom: 5%;
-        padding-top: 5%;
-        background-color: rgba(0,0,0,.5);
-        color: white;
-        text-align: center;
-    }
+.top-item, .right-item, .left-item, .bottom-item{
+    position: fixed;
+    z-index: 1000;
+    color: #734519;
+    background-color: #eac84b;
+    font-weight: 300;
+}
 
-    img {
-        width: 10vw;
-    }
+.top-item{
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 60px;
+    padding-top: 10px;
+}
 
-    #menu {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        background-color: rgba(255,255,255,.7);
-        position: fixed;
-        top: 0;
-        padding: 1.2% 0;
-        text-align: center;
-        margin: 0 28vw;
-    }
+.right-item{
+    z-index: 1100;
+    width: 60px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 1s;
+}
 
-    .menu_link {
-        padding: 0 2vw;
-        color: black;
-        text-decoration: none;
-        font-family: 'Sriracha', cursive;
-        transition: .5s;
-    }
+/* .right-item:hover{
+    padding-left: 90px;
+} */
 
-    .menu_link:hover {
-        color: deepskyblue;
-        text-decoration: deepskyblue underline;
-    }
+ul > li{
+    list-style: none;
+}
 
-    #head {
-        text-align: center;
-        padding-bottom: 5%;
-    }
+ul > li > a{
+    text-decoration: none;
 
-    #head_text {
-        font-family: 'Sriracha', cursive;
-        font-size: 1vw;
-        background-color: rgba(0,0,0,.5);
-        padding: 5%;
-        margin: 5% 35%;
-        border: 5px solid deepskyblue;
-        border-radius: 30px;
-    }
+}
 
-    #head_scroll {
-        font-family: 'Sriracha', cursive;
-        margin: 0 5%;
-        font-size:1.5vw;
-        font-weight: bold;
-    }
+.current-section{
+    display: block;
+}
 
-    #about {
-        background-color: rgba(0,0,0,.8);
-    }
+ul > li:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    border-top: 2px solid;
+    border-color: #734519;
+    margin: 0 20px;
+}
 
-    #about_list, #projects_list {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.left-item{
+    z-index: 1100;
+    width: 60px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
 
-    .about_title {
-        font-family: 'Sriracha', cursive;
-        font-size: 2.5vw;
-        margin: 15%;
-    }
+.bottom-item{
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+}
 
-    .about_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        background-color: rgba(255,255,255,.5);
-        margin: 8% 20%;
-        padding: 3%;
-        border-radius: 30px;
-        color: black;
-    }
+.raise-bottom{
+    height: 90px;
+    background-color: #dd6b41;
+    color: #f2f2f2;
+}
 
-    #skills {
-        background-color: rgba(0,0,0,.5);
-    }
+#email, #linkedin, #github{
+    font-size: 23px;
+    padding: 15px 5px;
+}
 
-    #skills_list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
+#email:hover, #linkedin:hover, #github:hover{
+    cursor: pointer;
+    font-size: 26px;
+}
 
-    .language {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        margin: 10%;
-    }
+#siteby{
+    padding-top: 15px;
+}
 
-    #projects {
-        background-color: rgba(0,0,0,.8);
-    }
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: #734519 underline;   
+}
 
-    .project_title {
-        font-family: 'Sriracha', cursive;
-        text-decoration: white underline;
-        color: white;
-        font-weight: bold;
-        font-size: 2.3vw;
-        margin-bottom: 1.5%;
-        transition: .5s;
-    }
+.media{
+    position: absolute;
+    top: 40%;
+}
 
-    .project_title:hover {
-        text-decoration: deepskyblue underline;
-    }
+.section-menu{
+    position: absolute;
+    top: 40%;
+    left: -70px;
+}
 
-    .project_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        border-right: solid 2px white;
-        margin: 3% 15% 4% 8%;
-        text-align: right;
-        padding: 0 4% 0 0;
-    }
+.contacts{
+    text-align: center;
+}
 
-    .project_img_container {
-        margin-top: 3%;
-        padding-right: 20%;
-    }
+.main-body{
+    margin: 39px 59px;
+    background-color: #f3e5c7;
+}
 
-    .project_img {
-        width: 30vw;
-    }
+.welcome{
+    text-align: center;
+    font-weight: 600;
+    background-image: -webkit-linear-gradient(67.4deg, #f3e5c7 49%, #dd6b41 49%);
+    height: 630px;
+    transition: all 2s ease;
+}
 
-    #education {
-        background-color: rgba(0,0,0,.5);
-    }
+.top-heading-text{
+    padding-top: 10%;
+    font-size: 25px;
+}
 
-    #education_list {
-        background-color: rgba(0,0,0,.8);
-        margin: 0 20% 10% 20%;
-        text-align: center;
-        padding: 7% 10%;
-        border-radius: 90px;
-    }
+.hey-text{
+    margin-left: -9%;
+}
 
-    .school_description {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        border-top: solid white;
-        padding: 3% 0 12% 0;
-    }
+.there-text{
+    padding-left: 9%;
+    margin-top: -17px;
+}
 
-    #contact {
-        background-color: rgba(0,0,0,.8);
-    }
+.bottom-heading-text{
+    padding-top: 5%;
+}
 
-    #contact_list {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+.introductions, .my-work, .about-me, .thank-you{
+    padding: 55px 0 0;
+}
 
-    #contact_info {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        text-align: left;
-        padding-left: 18%;
-    }
+.introductions{
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "heading image" "para image" ". image";
+    height: 630px;
+    background-color: #f3e5c7;
+    padding: 0 120px;
+}
 
-    #resume {
-        text-align: left;
-        padding-left: 11%;
-    }
+.introductions>h2{
+    z-index: 100;
+    grid-area: heading;
+    font-size: 31px;
+    margin: 60px 0 -50px;
+}
 
-    #resume_iframe {
-        width: 90%;
-        height: 50vh;
-    }
+.para{
+    grid-area: para;
+    z-index: 100;
+}
 
-    #download_link {
-        font-family: 'Sawarabi Mincho', sans-serif;
-        color: white;
-        font-size: 2vw;
-        text-decoration: white underline;
-        text-align: center;
-        padding: 4% 0 0 0;
-        transition: .5s;
-    }
+.introductions>div>p{
+    /* margin: 0 15%;
+    padding: 2%; */
+    font-size: 24px;
+    line-height: 1.3;
+}
 
-    #download_link:hover {
-        text-decoration: deepskyblue underline;
-    }
+.img-container{
+    grid-area: image;
+    z-index: 100;
+}
 
-    .misc_link {
-        text-decoration: deepskyblue underline;
-        color: white;
-        transition: .5s;
-    }
+.piano_img{
+    width: 90%;
+    margin: 50px 0 0 50px;
+    transition: 1s;
+    border-radius: 25px 30%;
+}
 
-    .misc_link:hover {
-        color: deepskyblue;
-    }
+.intro-blob-img{
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    transform: rotate(32deg);
+    margin: -160px -55px;
+}
+
+.my-work{
+    background-color: #dd6b41;
+    padding-bottom: 50px;
+    border-radius: 10%;
+}
+
+.my-work>h2{
+    font-size: 31px;
+    padding: 0 100px;
+}
+
+.work-slideshow{
+    position: relative;
+    margin: 0 10%;
+}
+
+.slides{
+    display: none;
+    grid-template-areas: "descrip image";
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -45px;
+    padding: 22px 16px;
+    color: #eac84b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    grid-area: descrip;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    bottom: 8px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.project_img{
+    grid-area: image;
+    width: 100%;
+}
+
+/* .about-me{
+    height: 630px;
+} */
+
+.about-me>h2{
+    font-size: 31px;
+}
+
+.about-me>h2, .about-me>div{
+    padding: 0 100px;
+}
+
+.about-content{
+    display: grid;
+    grid-template-areas: "headshot text";
+}
+
+.about-content>img{
+    width: 40%;
+    grid-area: headshot;
+    border-radius: 20% 20px;
+}
+
+.about-content>p{
+    grid-area: text;
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.thank-you{
+    height: 315px;
+    padding: 40px 250px 0;
+    line-height: 1.3;
+    background-color: #dd6b41;
+    color: #f2f2f2;
+    border-radius: 25% 25% 0 0;
+    text-align: center;
+}
+
+.thank-you>h2{
+    font-size: 31px;
+}
+
+.thank-you>p{
+    font-size: 25px;
+}
+
+/*||||||||||||||||||||||
+||| MOBILE-LANDSCAPE |||
+||||||||||||||||||||||*/
+@media (min-width: 480px) {
+    
+}
+
+/*|||||||||||||||||||||
+||| TABLET-PORTRAIT |||
+|||||||||||||||||||||*/
+@media (min-width: 768px) {
+    
+}
+
+/*||||||||||||||||||||||
+||| TABLET-LANDSCAPE |||
+||||||||||||||||||||||*/
+@media (min-width: 992px) {
+    
+}
+
+/*||||||||||||
+||| LAPTOP |||
+||||||||||||*/
+@media (min-width: 1200px) {
+    
 }

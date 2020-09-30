@@ -2,135 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Daunais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Lobster+Two|Sawarabi+Mincho|Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="menu">
-        <!-- <a href="#about" class="menu_link">About Me</a> -->
-        <a href="#skills" class="menu_link">Skills</a>
-        <a href="#projects" class="menu_link">Projects</a>
-        <a href="#education" class="menu_link">Education</a>
-        <a href="#contact" class="menu_link">Contact</a>
-    </div>
-
-    <div id="head" class="section">
-        <div id="head_text">
-            <h2>Hello, I'm Andrew</h2>
-            <h2>Fullstack Developer</h2>
+    <div id="top-of-page"></div>
+    <header class="border-items">
+        <div class="top-item">
+            <div class="heading">Andrew T. Daunais</div>
+            <div>Web Development • Music</div>
         </div>
-        <div id="head_scroll" onclick="document.getElementById('about').scrollIntoView();" onmouseover="this.classList.add('animated', 'pulse')" onmouseout="this.classList.remove('animated', 'pulse')">
-            <div>Get to know me</div>
-            <img src="images/down_arrow.png" alt="arrow">
+        <div class="right-item">
+            <!-- <div class="section-menu">
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="goToElement('top-of-page');" id="welcome-link">Welcome</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToElement('introductions');" id="introductions-link">Introductions</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToElement('myWork');" id="myWork-link">My Work</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToElement('aboutMe');" id="aboutMe-link">About Me</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToElement('thankYou');" id="thankYou-link">Thank You</a></li>
+                </ul>
+            </div> -->
         </div>
-    </div>
-
-    <div id="about" class="section">
-        <h1>About Me</h1>
-        <div id="about_list">
-            <div class="about_title">Passionate</div>
-            <div class="about_description">Whether it's programming, music, or video game design, I love opportunities to fully immerse myself in new concepts and skill sets. My drive as a developer stems from my passion to absorb any information I can get my hands on.</div>
-            <div class="about_description">In August of 2019, I began learning software development skills at CodeCrew Code School. After 6 months of continuously learning new languages and frameworks every 3-4 weeks, I proved to myself and those around me that I have the ability to adapt to any environment I'm thrown into and pick up new knowledge quickly.</div>
-            <div class="about_title">Adaptable</div>
-            <div class="about_title">Multifaceted</div>
-            <div class="about_description">From receiving my bachelor's degree in music performance at Austin Peay State University to graduating from CodeCrew Code School, I'm always looking to expand my repertoire of skills. Versatility is an important characteristic of any person, whether they are working independently or with larger groups. I take pride in my ability to offer a unique perspective to any work environment.</div>
+        <div class="left-item">
+            <!-- <div class="media">media?</div> -->
         </div>
-    </div>
-
-    <div id="skills" class="section">
-        <h1>Languages and Frameworks</h1>
-        <div id="skills_list">
-            <div class="language">
-                <img src="images/icon_logos/icons8-html-5-100.png" alt="HMTL Logo">
-                <div>HTML</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-css3-100.png" alt="CSS Logo">
-                <div>CSS</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-javascript-100.png" alt="JS Logo">
-                <div>JavaScript</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-python-104.png" alt="python Logo">
-                <div>Python</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-c-sharp-logo-100.png" alt="c# Logo">
-                <div>C#</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-react-90.png" alt="react Logo">
-                <div>ReactJS</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-django-100.png" alt="django Logo">
-                <div>Django</div>
-            </div>
-            <div class="language">
-                <img src="images/icon_logos/icons8-redux-100.png" alt="redux Logo">
-                <div>Redux</div>
+        <div class="bottom-item">
+            <div class="contacts">
+                <i class="fa fa-envelope" id="email"></i>
+                <i class="fa fa-linkedin" id="linkedin"></i>
+                <i class="fa fa-github" id="github"></i>
+                <div id="siteby">Site by Andrew Daunais</div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div id="projects" class="section">
-        <h1>Projects</h1>
-        <div id="projects_list">
-            <div class="project_description">
-                <a href="https://github.com/atdaunais/waking-soundly" target="_blank"><div class="project_title">Waking Soundly</div></a>
-                <div>Waking Soundly is a music-led meditation aid. Using Django, ReactJS, CSS, Redux, and a JavaScript library from
-                    <a href="https://beepbox.co/" target="_blank" class="misc_link">BeepBox</a>, this application procedurally loops through music in different tonal centers selected by the user. Focused on the idea of relaxation through musical ideas of repetition, tension, and release, I created a system that will weave the 144+ tracks of music together in different combinations each time you listen.</div>
+    <div class="main-body">
+        <div class="welcome" id="welcome">
+            <div class="top-heading-text">
+                <h1 class="hey-text">Hey</h1>
+                <h1 class="there-text">There</h1>
             </div>
-            <div class="project_img_container"><a href="https://github.com/atdaunais/waking-soundly" target="_blank"><img src="images/waking_soundly_homepage.png" alt="ws image" class="project_img"></a></div>
-
-            <div class="project_description">
-                <a href="http://app4.andrewdaunais.com/" target="_blank"><div class="project_title">Metsava</div></a>
-                <div>Metsava is an MMORPG (Massively Multiplayer Online Role Playing Game) built using Django, ReactJS and CSS. Aesthetically inspired by world mythologies of tree deities, this game allows the player to dive in and create their own story. You can choose to be a mage, warrior, or rogue, then join friends and strangers to fight against the enemies in the game. Or go to the PVP (player versus player) mode and fight with other players online. Adventures await you in Metsava.</div>
-            </div>
-            <div class="project_img_container"><a href="http://app4.andrewdaunais.com/" target="_blank"><img src="images/Screenshot%20from%202020-01-14%2016-05-00.png" alt="metsava image" class="project_img"></a></div>
-
-            <div class="project_description">
-                <a href="http://app1.andrewdaunais.com/" target="_blank"><div class="project_title">The Gamer's Wiki</div></a>
-                <div>This wiki site is a place to explore video game history and in-game lore. This is a fullstack Django application using the Django templating engine along with CSS. Enjoy searching through content others have posted, or login and create your own content.</div>
-            </div>
-            <div class="project_img_container"><a href="http://app1.andrewdaunais.com/" target="_blank"><img src="images/gamers_wiki_ss.png" alt="gamers wiki image" class="project_img"></a></div>
-        </div>
-    </div>
-
-    <div id="education" class="section">
-        <h1>Education</h1>
-        <div id="education_list">
-            <div><img src="images/logo_codeschool.png" alt="CS Logo"></div>
-            <div class="school_description">
-                <a href="https://www.code-crew.org/codeschool" target="_blank" class="misc_link"><div>CodeCrew Code School</div></a>
-                <div>Software Development Bootcamp ~ 2019-2020</div>
-            </div>
-
-            <div><img src="images/logo_APSU.png" alt="APSU Logo"></div>
-            <div class="school_description">
-                <a href="https://www.apsu.edu/" target="_blank" class="misc_link"><div>Austin Peay State University</div></a>
-                <div>Bachelor of Music - Classical Voice Performance ~ 2014-2018</div>
+            <div class="bottom-heading-text">
+                <h2>I'm Andrew</h2>
+                <h3>Full-stack Developer</h3>
+                <h3>Musician</h3>
             </div>
         </div>
+
+        <div class="" id="body-container">
+            <img src="images/blob3.svg" alt="blob" class="intro-blob-img">
+            <section class="introductions" id="introductions">
+                <h2>Nice to Meet You!</h2>
+                <div class="para">
+                    <p>My name's Andrew Daunais and I'm a web developer from Memphis, Tennessee. With a background in both music and full-stack web development, my approach to work takes on a balance of discipline and creativity. I believe unique backgrounds only serve to enrich any project or company with fresh perspectives, and I hope to provide that for anyone I work with.</p>
+                </div>
+                <div class="img-container">
+                    <img src="images/piano2.jpg" alt="piano image" class="piano_img">
+                </div>
+            </section>
+            
+
+            <section class="my-work" id="myWork">
+                <h2>My Work</h2>
+                <div class="work-slideshow">
+                
+                    <div class="slides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/waking_soundly_homepage.png" alt="ws image" class="project_img">
+                        <div class="text">
+                            <h3><a href="https://github.com/atdaunais/waking-soundly" target="_blank">Waking Soundly</a></h3>
+                            <div>Waking Soundly is a music-led meditation aid. Using Django, ReactJS, CSS, Redux, and a JavaScript library from
+                                <a href="https://beepbox.co/" target="_blank" class="misc_link">BeepBox</a>, this application procedurally loops through music in different tonal centers selected by the user. Focused on the idea of relaxation through musical ideas of repetition, tension, and release, I created a system that will weave the 144+ tracks of music together in different combinations each time you listen.</div>
+                        </div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/chew901.png" alt="chew901 image" class="project_img">
+                        <div class="text">
+                            <h3><a href="https://chew901.com/" target="blank">Chew901</a></h3>
+                            <p>Chew901 is a site created in Wordpress in the midst of the 2020 Covid-19 outbreak. This site allows local Memphis restaurants to reach their customers for food pickup in a time where dine-in simply isn't an option.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="slides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/myclassof.png" alt="myclassof image" class="project_img">
+                        <div class="text">
+                            <h3>MyClassOf (In Development)</h3>
+                            <p>MyClassOf is a social site for graduates in response to the 2020 Covid-19 outbreak. Built using the Laravel framework, this site gives graduates the opportunity to stay connected to friends and family and helps them find connections for their future.</p>
+                        </div>
+                    </div> -->
+                    <div class="slides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/metsava.png" alt="metsava image" class="project_img">
+                        <div class="text">
+                            <h3><a href="http://app4.andrewdaunais.com/" target="_blank">Metsava</a></h3>
+                            <div>Metsava is an MMORPG (Massively Multiplayer Online Role Playing Game) built using Django, ReactJS and CSS. Aesthetically inspired by world mythologies of tree deities, this game allows the player to dive in and create their own story. You can choose to be a mage, warrior, or rogue, then join friends and strangers to fight against the enemies in the game. Or go to the PVP (player versus player) mode and fight with other players online. Adventures await you in Metsava.</div>
+                        </div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/gamers_wiki_ss.png" alt="gamers wiki image" class="project_img">
+                        <div class="text">
+                            <h3><a href="http://app1.andrewdaunais.com/" target="_blank">Gamer's Wiki</a></h3>
+                            <div>This wiki site is a place to explore video game history and in-game lore. This is a fullstack Django application using the Django templating engine along with CSS. Enjoy searching through content others have posted, or login and create your own content.</div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+
+            <section class="about-me" id="aboutMe">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/img_headshot.jpg" alt="headshot">
+                    <p>Expression and structure go hand in hand for me. In order to express yourself in any given medium, it's important that you understand the structure of the medium itself. Beginning my education with a Bachelor's degree in Music Performance at Austin Peay State University, classical music taught me the principle of taking a structured artform and bending it to express myself as an individual. I carry those same principles into my career as a web developer.<br><br>
+                    Through my programming education at CodeCrew Code School, a 6-month 8am-5pm coding bootcamp, I learned the fundamentals of object oriented programming and full-stack development by learning HTML, JavaScript, Python, C#, ReactJS, and Django. After graduating, I have continued expanding my skillset by teaching myself PHP and Laravel through my work with MyClassOf, a small startup website still in development. I have also worked with integrating Stripe's payment processing APIs on MyClassOf.</p>
+                </div>
+                
+            </section>
+
+            <section class="thank-you" id="thankYou">
+                
+                <h2>Thank you</h2>
+                <p>I really appreciate you taking time to learn more about me! For any more information or to simply reach out to me, feel free to contact me through my email or linkedin, both listed below.</p>
+            </section>
+        </div>
+        <div id="bottom-of-page"></div>
     </div>
 
-    <div id="contact" class="section">
-        <h1>Contact</h1>
-        <div id="contact_list">
-            <div id="resume">
-                <iframe src="images/Andrew%20Daunais%20Resume%20(2).pdf" frameborder="0" id="resume_iframe"></iframe>
-                <a href="images/Andrew%20Daunais%20Resume%20(2).pdf" download="andrew_daunais_resume"><div id="download_link">Download my Resume</div></a>
-            </div>
-            <div id="contact_info">
-                <div>Email: atdaunais@gmail.com</div>
-                <div>LinkedIn: <a href="https://www.linkedin.com/in/andrew-daunais/" target="_blank" class="misc_link">Visit my LinkedIn Here</a></div>
-                <div>Github: <a href="https://github.com/atdaunais" target="_blank" class="misc_link">See my work on Github</a></div>
-            </div>
-        </div>
-    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slides[slideIndex-1].style.display = "grid"; 
+        }
+
+        function goToElement(el){
+            document.getElementById(el).scrollIntoView(true);
+        }
+
+        function isInViewport(elem) {
+            var bounding = elem.getBoundingClientRect();
+            return (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.bottom <= (window.innerHeight /*|| document.documentElement.clientHeight*/) &&
+                bounding.right <= (window.innerWidth /*|| document.documentElement.clientWidth*/)
+            );
+        };
+
+        function toggleSideMenu(section) {
+            let currentLink = document.getElementById(`${section.id}-link`);
+
+            if (isInViewport(section)){
+                console.log(`IN ${section.id}`);
+                if(!currentLink.classList.contains("active-section")){
+                    currentLink.classList.add("active-section");
+                } 
+            }
+            else{
+                console.log(`leave ${section.id}`)
+                if(currentLink.classList.contains("active-section")){
+                    currentLink.classList.remove("active-section");
+                    // console.log("not here");
+                }
+            }
+        }
+
+        window.addEventListener('scroll', function(){
+            let bottom = document.getElementById('bottom-of-page');
+            let bottomTab = document.getElementsByClassName('bottom-item')[0];
+            let welcome = document.getElementById('welcome');
+            let introductions = document.getElementById('introductions');
+            let myWork = document.getElementById('myWork');
+            let aboutMe = document.getElementById('aboutMe');
+            let thankYou = document.getElementById('thankYou');
+
+            // toggleSideMenu(welcome);
+            // toggleSideMenu(introductions);
+            // toggleSideMenu(myWork);
+            // toggleSideMenu(aboutMe);
+            // toggleSideMenu(thankYou);
+
+            // let sectionArray = [welcome, introductions, myWork, aboutMe, thankYou];
+
+            // sectionArray.forEach(element => {
+            //     toggleSideMenu(element);
+            // });
+
+            if (isInViewport(bottom)) {
+                if(!bottomTab.classList.contains('raise-bottom')){
+                    bottomTab.classList.add('raise-bottom');
+                }
+            }
+            else{
+                if(bottomTab.classList.contains('raise-bottom')){
+                    bottomTab.classList.remove('raise-bottom');
+                }
+            };
+        });
+        
+    </script>
 </body>
 </html>
